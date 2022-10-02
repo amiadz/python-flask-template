@@ -13,6 +13,7 @@ from app.model import user
 from app import views
 from app import auth_views
 from app import register_views
+from app import health
 
 User = user.User
 

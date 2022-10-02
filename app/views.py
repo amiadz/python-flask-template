@@ -1,6 +1,6 @@
 from app import app
-from flask import render_template, url_for, redirect
-from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
+from flask import render_template
+from flask_login import login_required
 
 @app.route('/')
 def home():
