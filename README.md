@@ -1,6 +1,19 @@
-## Python Flask Authentication
+## Python Flask 
 
-This repository contains the code used in the Python Flask Authentication [video](https://www.youtube.com/watch?v=71EU8gnZqZQ) uploaded on [my YouTube channel](https://www.youtube.com/watch?v=71EU8gnZqZQ).
+# Node Express Rest Api Template
+
+### The stack
+
+1. python - runtime
+2. flask - Framework
+3. SqlAlchemy - ORM
+4. postgres - DB
+
+---
+
+## Configuration
+
+In order to run the server, there is config.py in the repo.
 
 ## Installation
 
