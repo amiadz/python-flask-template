@@ -7,5 +7,7 @@ from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import InputRequired, Length, ValidationError
 from flask_bcrypt import Bcrypt
 
+app.config.from_object('config.DevConfig')
+
 if __name__ == "__main__":
     app.run(debug=True)
