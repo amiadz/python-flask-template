@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/cfi.ico')}}">
+{% extends 'public/base.html' %} 
+{% block head %}
     <title>Home</title>
-</head>
+{% endblock %} 
 
-<body>
+{% block body %}
     <h1>Login Authentication System in Flask.</h1>
     <a href="{{ url_for('login') }}">Login Page</a><br>
     <a href="{{ url_for('register') }}">Register Page</a><br>
 
     <img src="{{ url_for('static', filename='img/cfi.png')}}">
     <script src="{{ url_for('static', filename='js/app.js')}}"></script>
-</body>
-
-</html>
+{% endblock %} 
