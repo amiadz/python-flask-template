@@ -38,7 +38,7 @@ class ProdConfig(Config):
     SQLALCHEMY_DATABASE_URI = f'postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_DATABASE_NAME}'
 ```
 
-You can change the config in `app.py` by changing the following line to this:
+You can change the config in `app/__init__.py` by changing the following line to this:
 ```python
 app.config.from_object('config.<desired config>')
 ```
