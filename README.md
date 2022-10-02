@@ -15,25 +15,36 @@ In order to run the server, there is config.py in the repo.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the required dependencies
+## How To Run
 
-##### Windows:
-```zsh
-pip install -r requirements.txt 
+1. Install `virtualenv`:
+```
+$ pip install virtualenv
 ```
 
-##### macOS/Linux:
-```zsh
-pip3 install -r requirements.txt
+2. Open a terminal in the project root directory and run:
+```
+$ virtualenv env
 ```
 
-## Usage
-
-##### Windows:
-```zsh
-python app.py
+3. Then run the command:
 ```
-##### macOS/Linux:
-```zsh
-python3 app.py
+$ .\env\Scripts\activate
+```
+
+4. Then install the dependencies:
+```
+$ (env) pip install -r requirements.txt
+```
+
+5. Finally start the web server:
+```
+$ (env) python app.py
+```
+
+This server will start on port 5000 by default. You can change this in `app.py` by changing the following line to this:
+
+```python
+if __name__ == "__main__":
+    app.run(debug=True, port=<desired port>)
 ```
