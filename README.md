@@ -1,6 +1,4 @@
-## Python Flask 
-
-# Node Express Rest Api Template
+## Python Flask Template
 
 ### The stack
 
