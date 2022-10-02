@@ -37,6 +37,14 @@ $ .\env\Scripts\activate
 $ (env) pip install -r requirements.txt
 ```
 
+4. Then create local db: 
+```
+$ python
+$ >>> from app.db_util import db
+$ >>> db.create_all()
+$ >>> exit()
+```
+
 5. Finally start the web server:
 ```
 $ (env) python app.py
